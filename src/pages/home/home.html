@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-grid border=1>
+    <ion-row>
+      <ion-col>Nom</ion-col>
+      <ion-col>Age</ion-col>
+    </ion-row>
+    <ion-row ng-if="this.etudiants!=null" *ngFor="let et of etudiants">
+      <ion-col>{{et.nom}}</ion-col>
+      <ion-col>{{et.age}}</ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
